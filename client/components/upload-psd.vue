@@ -14,13 +14,13 @@
 	export default {
 		methods: {
 			beforeUpload(file){
-				if(file.size > 20 * 1024 * 1024){
-					this.$message.error('psd文件不能超过20M！')
+				if(file.size > 30 * 1024 * 1024){
+					this.$message.error('psd文件不能超过30M！')
 					return;
 				}
 				let temp1 = file.name.split('.')
 				let temp = temp1[temp1.length - 1]
-				if (!['psd'].includes(temp)) {
+				if (!['psd', 'PSD'].includes(temp)) {
 					this.$message.error('请上传psd文件')
 					return false;
 				}
