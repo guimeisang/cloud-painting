@@ -1,7 +1,7 @@
 module.exports = {
 	port: 4000,
 	mongodb: {
-		url: 'mongodb://localhost:27017/easyCreator',
+		url: 'mongodb://localhost:27017/cloudPainting',
 		options: {}
 	},
 	middleware:['handlerError'],
